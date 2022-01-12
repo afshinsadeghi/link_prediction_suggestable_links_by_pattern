@@ -1,0 +1,33 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+    
+
+
+
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "args": [],
+            
+            
+            //"args": [ "-unsup", "-dyn_thr" ,"-data" ,"data/EN_DE_15K_V1", "-epoch_lit", "1",  "-score_func", "transe_smpr" ,"-opn", "sub", "-embed_dim" , "200", "-embed_dim_sim", "200" , "-opn_sim" , "subx", "-mpstackscore", "sum", "-hard_align", "-ea", "-dyn_thr",], //subx
+            //"args": [ "-score_func" ,"transe_smpr", "-epoch_lit", "1" ]
+            //"args": [ "TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=1","python run_cat.py -name openea_transe_model_ea_all_attr_rel_cat_noshared -score_func transe_smpr -opn sub -gamma 9 -hid_drop 0.1 -init_dim 200 -gcn_dim 200 -embed_dim 400  -gpu 0 -batch 64 -epoch_lit 100 > log/new_init200_batch64_transe_sim_mes_pas_200_debug.log" ]
+            //older "args": ["CUDA_VISIBLE_DEVICES=","3", "-name", "openea_transe_model_ea_all_attr_rel_cat_noshared", "-score_func" ,"rot3d" ,"-opn", "sub", "-gamma", "9", "-hid_drop", "0.1" ,"-init_dim", "200", "-gpu" ,"'0'" ,"-batch" ,"64" ,">", "log/new_init200_batch64_gpu3_rot3d_debug.log"]
+            "env": {"CUDA_VISIBLE_DEVICES": "3" }
+                   
+        }
+        
+    ]
+    
+
+}
